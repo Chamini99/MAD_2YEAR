@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="PeopleDetails">People Details</string>
+    <string name="DoctorDetails">Doctor Details</string>
+    <string name="MainTitle">Health is a state of complete harmony of the body,mind.</string>
+    <string name="OrderVaccine">Order Vaccine</string>
+    <string name="ViewVaccine">View Vaccine Orders</string>
+    <string name="ViewDoctors">View Doctors</string>
+    <string name="ViewPeople">View Peoples</string>
+    <string name="AddOrder">Add Vaccine Order</string>
+    <string name="RequestDate">Vaccine Request Date</string>
+    <string name="VaccineType">Vaccine Type</string>
+    <string name="VaccineAmount">Vaccine Quantity</string>
+    <string name="OrderVaccineBtn">Order Vaccine</string>
+    <string name="RequestVaccineOrders">Request Vaccine Orders</string>
+    <string name="UpdateVaccine">Update Vaccine Order</string>
+    <string name="UpdateVaccineBtn">Update Order</string>
+</resources>
