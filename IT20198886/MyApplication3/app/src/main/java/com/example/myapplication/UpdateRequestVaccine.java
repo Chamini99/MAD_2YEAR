@@ -58,7 +58,7 @@ public class UpdateRequestVaccine extends AppCompatActivity {
         editData();
 
 
-
+//update data from the table
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
