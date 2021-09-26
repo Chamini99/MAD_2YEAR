@@ -74,7 +74,7 @@ public class DoctorDetails extends AppCompatActivity {
 
     }
 
-//send data to view
+//send data to view.
     private class Custom extends BaseAdapter {
 
         @Override
