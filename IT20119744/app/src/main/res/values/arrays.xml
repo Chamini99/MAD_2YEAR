@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="age">sp_arr_age
+        <item>02 - 17</item>
+        <item>17 - 30</item>
+        <item>30 - 60</item>
+        <item>above 60</item>
+    </string-array>
+    <string-array name="vaccine_type">sp_arr_vacc_type
+        <item>Sinopharm</item>
+        <item>AstraZeneca</item>
+        <item>Pfizer</item>
+        <item>Moderna</item>
+        <item>Sputnik</item>
+    </string-array>
+
+    <string-array name="age_update">sp_arr_age
+        <item>02 - 17</item>
+        <item>17 - 30</item>
+        <item>30 - 60</item>
+        <item>above 60</item>
+    </string-array>
+    <string-array name="vaccine_type_update">sp_arr_vacc_type
+        <item>Sinopharm</item>
+        <item>AstraZeneca</item>
+        <item>Pfizer</item>
+        <item>Moderna</item>
+        <item>Sputnik</item>
+    </string-array>
+
+    <string-array name="user_type">sp_arr_age
+        <item>Type</item>
+        <item>User</item>
+        <item>Staff</item>
+        <item>Doctor</item>
+        <item>Stock Manager</item>
+    </string-array>
+
+    <string-array name="user_type_profile">sp_arr_age
+        <item>Type</item>
+        <item>User</item>
+        <item>Staff</item>
+        <item>Doctor</item>
+        <item>Stock Manager</item>
+    </string-array>
+</resources>
