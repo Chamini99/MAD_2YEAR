@@ -122,6 +122,7 @@ public class PeopleDetails extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+            //delete people details from db
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
