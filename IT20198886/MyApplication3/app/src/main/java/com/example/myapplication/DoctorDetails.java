@@ -44,7 +44,7 @@ public class DoctorDetails extends AppCompatActivity {
 
 
 
-
+//select all doctors
     private void dis() {
         sqLiteDatabase = dbMain.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("select * from Doctor_Details", null);
