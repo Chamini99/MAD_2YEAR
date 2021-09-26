@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SuwasethaVaccineManagement</string>
+    <string name="tba_doctor">Doctor</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_vacc_details">Vaccine Details</string>
+    <string name="btn_mynotes">NOTES</string>
+    <string name="tba_mynotes">My Notes</string>
+    <string name="txt_date">Date</string>
+    <string name="txt_about">About</string>
+    <string name="txt_descript">Description</string>
+    <string name="btn_newnote">New note</string>
+    <string name="btn_update">UPDATE NOTE</string>
+    <string name="btn_delete">DELETE NOTE</string>
+    <string name="txt_date1">Date</string>
+    <string name="txt_about1">About</string>
+    <string name="txt_descript1">Description</string>
+    <string name="btn_add">ADD</string>
+    <string name="tba_addnotes">Add notes</string>
+    <string name="tba_update">Update notes</string>
+    <string name="txt_date2">Date</string>
+    <string name="txt_about2">About</string>
+    <string name="txt_descript2">Description</string>
+    <string name="btn_update1">UPDATE</string>
+    <string name="tba_vacc_request">Details of vaccine request</string>
+    <string name="txt_para">let\'s give the covid-19 vaccine for protect our people.</string>
+
+
+</resources>
