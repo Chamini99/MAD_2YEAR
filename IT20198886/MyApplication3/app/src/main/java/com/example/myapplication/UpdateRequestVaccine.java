@@ -47,7 +47,7 @@ public class UpdateRequestVaccine extends AppCompatActivity {
 
 
 
-
+//get the data from text field
 
         dbMain = new DatabaseHelper(UpdateRequestVaccine.this);
         edit = (Button)findViewById(R.id.btn_RequestVaccineUpdate);
@@ -58,7 +58,7 @@ public class UpdateRequestVaccine extends AppCompatActivity {
         editData();
 
 
-
+//update data from the table
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

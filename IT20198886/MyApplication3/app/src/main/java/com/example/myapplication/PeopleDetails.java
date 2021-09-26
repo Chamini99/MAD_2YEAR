@@ -27,7 +27,7 @@ public class PeopleDetails extends AppCompatActivity {
     String[] PeopleAddress;
     String[] PeopleMobile;
     int[] PeopleID;
-
+//Oncreate event init
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,9 +44,10 @@ public class PeopleDetails extends AppCompatActivity {
 
 
 
-
+//select the all people details
     private void dis() {
         sqLiteDatabase = dbMain.getReadableDatabase();
+        //select query
         Cursor cursor = sqLiteDatabase.rawQuery("select * from People_Details", null);
         if (cursor.getCount() > 0) {
             PeopleID = new int[cursor.getCount()];
@@ -55,6 +56,7 @@ public class PeopleDetails extends AppCompatActivity {
             PeopleMobile = new String[cursor.getCount()];
 
             int i = 0;
+            //get the result
             while (cursor.moveToNext()) {
                 PeopleID[i] = cursor.getInt(0);
                 PeopleName[i] = cursor.getString(1);
@@ -62,6 +64,7 @@ public class PeopleDetails extends AppCompatActivity {
                 PeopleMobile[i] = cursor.getString(3);
                 i++;
             }
+            //pass the result to the list view
             Custom adapter = new Custom();
             listView.setAdapter(adapter);
         }
@@ -92,6 +95,7 @@ public class PeopleDetails extends AppCompatActivity {
             return 0;
         }
 
+        //Display tthe view
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             TextView textView,textdate,txtQty;
@@ -118,6 +122,7 @@ public class PeopleDetails extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+            //delete people details from db
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

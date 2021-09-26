@@ -26,16 +26,16 @@ public class RequestVaccine extends AppCompatActivity {
     SQLiteDatabase db;
     DatePickerDialog picker;
     EditText eText;
-ImageView addListing;
+    ImageView addListing;
 
 
-
+    //set Oncreate event
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_vaccine);
 
-
+//Get the values from the textfields
         eText=(EditText) findViewById(R.id.txtRequestDate);
         eText.setInputType(InputType.TYPE_NULL);
         eText.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ ImageView addListing;
                 int day = cldr.get(Calendar.DAY_OF_MONTH);
                 int month = cldr.get(Calendar.MONTH);
                 int year = cldr.get(Calendar.YEAR);
-                // date picker dialog
+                // set date picker
                 picker = new DatePickerDialog(RequestVaccine.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -58,21 +58,21 @@ ImageView addListing;
 
 
 
-addListing=(ImageView)findViewById(R.id.addListing);
-addListing.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(getApplicationContext(),VaccineDetails.class);
-        startActivity(i);
-    }
-});
+        addListing=(ImageView)findViewById(R.id.addListing);
+        addListing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),VaccineDetails.class);
+                startActivity(i);
+            }
+        });
 
 
 
 
 
 
-
+//Pass the params
         _btnInsert = (Button)findViewById(R.id.btn_RequestVaccine);
         _txtDate = (EditText) findViewById(R.id.txtRequestDate);
         _txtType = (EditText) findViewById(R.id.txtRequestType);
@@ -96,17 +96,18 @@ addListing.setOnClickListener(new View.OnClickListener() {
 
 
     }
+    //Insert Query to the table
     public void insertData(String date,String type,String amount){
         ContentValues contentValues=new ContentValues();
         contentValues.put(DatabaseHelper.COLS_2,date);
         contentValues.put(DatabaseHelper.COLS_3,type);
         contentValues.put(DatabaseHelper.COLS_4,amount);
         long id=db.insert(DatabaseHelper.TABLE_NAME,null,contentValues);
-        Toast.makeText(RequestVaccine.this, "Order Inserted Successfully", Toast.LENGTH_LONG).show();
+        Toast.makeText(RequestVaccine.this, "Order Added Successfully", Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
-
+//restarting and loading
     }
 
 
