@@ -107,7 +107,7 @@ public class RequestVaccine extends AppCompatActivity {
 
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
-
+//restarting and loading
     }
 
 
