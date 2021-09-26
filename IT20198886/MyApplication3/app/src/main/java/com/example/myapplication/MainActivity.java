@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+//open the all button click windows
 
         button.setOnClickListener(new View.OnClickListener() {
 
