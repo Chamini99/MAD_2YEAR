@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Stock</string>
+    <string name="txt_signout">Sign Out</string>
+    <string name="txt_stock">Stock</string>
+    <string name="btn_availableStock">Available Stock</string>
+    <string name="btn_requestedStock">Requested Stock</string>
+    <string name="txt_orders">Orders</string>
+    <string name="txt_availableStock">Available Stock</string>
+    <string name="btn_updateStock">Update Stock</string>
+    <string name="btn_addVaccine">Add New Vaccine</string>
+    <string name="txt_updateStock">Update Stock</string>
+    <string name="txt_vaccineType">Vaccine Type</string>
+    <string name="txt_quantity">Quantity</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="txt_addVaccine">Add New Vaccine</string>
+    <string name="txt_addVaccineType">Vaccine Type</string>
+    <string name="txt_addQuantity">Quantity</string>
+    <string name="txt_vaccineQty">Quantity</string>
+    <string name="txt_vaccineName">Vaccine Name</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel1">Cancel</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_addPrice">Price</string>
+    <string name="txt_uPrice">Price</string>
+    <string name="txt_addUPrice">Price</string>
+    <string name="txtArea_vaccineType">Vaccine Type</string>
+    <string name="vaccineType_txt">Vaccine Type</string>
+</resources>

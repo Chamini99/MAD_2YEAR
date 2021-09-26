@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStock2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="290dp"
+        android:layout_height="62dp"
+        android:text="@string/txt_updateStock"
+        android:textColor="#004e63"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/txt_vaccineType"
+        android:layout_width="191dp"
+        android:layout_height="49dp"
+        android:text="@string/txt_vaccineType"
+        android:textColor="#004e63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/txt_quantity"
+        android:layout_width="129dp"
+        android:layout_height="44dp"
+        android:text="@string/txt_quantity"
+        android:textColor="#004e63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vaccineType"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="137dp"
+        android:layout_height="60dp"
+        android:text="@string/btn_update"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#004e63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArea_quantity"
+        app:layout_constraintVertical_bias="0.789"
+        android:onClick="updateRecords"/>
+
+    <EditText
+        android:id="@+id/txtArea_quantity"
+        android:layout_width="147dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textColor="#004e63"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quantity"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/txt_uPrice"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:text="@string/txt_uPrice"
+        android:textColor="#004e63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArea_quantity"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <EditText
+        android:id="@+id/txt_addUPrice"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/txt_addUPrice"
+        android:inputType="numberDecimal"
+        android:textColor="#004e63"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_uPrice"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <EditText
+        android:id="@+id/txtArea_vaccineType"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/txtArea_vaccineType"
+        android:inputType="textPersonName"
+        android:textColor="#004e63"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vaccineType"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
