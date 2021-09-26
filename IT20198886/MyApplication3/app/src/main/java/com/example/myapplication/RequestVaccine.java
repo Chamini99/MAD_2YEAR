@@ -103,7 +103,7 @@ public class RequestVaccine extends AppCompatActivity {
         contentValues.put(DatabaseHelper.COLS_3,type);
         contentValues.put(DatabaseHelper.COLS_4,amount);
         long id=db.insert(DatabaseHelper.TABLE_NAME,null,contentValues);
-        Toast.makeText(RequestVaccine.this, "Order Inserted Successfully", Toast.LENGTH_LONG).show();
+        Toast.makeText(RequestVaccine.this, "Order Added Successfully", Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
